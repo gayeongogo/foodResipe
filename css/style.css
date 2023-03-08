@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 300;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  cursor: pointer;
+  outline: 0;
+}
+
+input {
+  font-family: inherit;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+blockquote cite {
+  font-size: 1rem;
+}
+
+.meal-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff;
+  text-align: center;
+}
+.meal-wrapper .meal-search {
+  margin: 2rem 0;
+}
+.meal-wrapper .meal-search .meal-search-box {
+  margin: 1.2rem 0;
+  display: flex;
+}
+.meal-wrapper .meal-search .meal-search-box .serch-control {
+  width: 100%;
+  padding: 0 1rem;
+  font-size: 1.1rem;
+  outline: 0;
+  border: 1px solid rgb(119, 166, 24);
+  color: rgb(119, 166, 24);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+.meal-wrapper .meal-search .meal-search-box .search-btn {
+  width: 55px;
+  height: 55px;
+  font-size: 1.8rem;
+  color: #fff;
+  border: none;
+  background: rgb(119, 166, 24);
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  transition: all 0.2s linear;
+}
+.meal-wrapper .meal-search .meal-search-box .search-btn:hover {
+  filter: brightness(1.2);
+}
+.meal-wrapper .meal-result {
+  margin-top: 4rem;
+}
+.meal-wrapper .meal-result #meal {
+  margin: 2.4rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 3.5rem;
+}
+.meal-wrapper .meal-result #meal .meal-item {
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+  margin: 2rem 0;
+}
+.meal-wrapper .meal-result #meal .meal-item .meal-img img {
+  width: 100%;
+  display: block;
+}
+.meal-wrapper .meal-result #meal .meal-name {
+  padding: 1.5rem 0.5rem;
+}
+.meal-wrapper .meal-result #meal .meal-name h3 {
+  font-size: 1.4rem;
+}
+.meal-wrapper .meal-result #meal .meal-name .recipe-btn {
+  color: #fff;
+  background: rgb(119, 166, 24);
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.75rem 0;
+  display: block;
+  width: 175px;
+  border-radius: 2rem;
+  transition: all 0.2s linear;
+  margin: 1rem auto;
+}
+.meal-wrapper .meal-result #meal .meal-name .recipe-btn:hover {
+  filter: brightness(1.2);
+}
+
+@media screen and (max-width: 1080px) {
+  .meal-wrapper .meal-result #meal {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 650px) {
+  .meal-wrapper .meal-result #meal {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}/*# sourceMappingURL=style.css.map */
