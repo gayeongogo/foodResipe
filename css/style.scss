@@ -112,6 +112,37 @@ blockquote{
         }
     
     }
+    .meal-details{
+        .recipe-close-btn{
+            i{}
+        }
+        &-content{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: #fff;
+            background: rgb(119, 166, 24);
+            border-radius: 1rem;
+            width: 90%;
+            height: 90%;
+            overflow-y: scroll;
+            display: block;
+            padding: 2rem 0;
+            h2{}
+            .recipe-category{}
+            .recipe-instruct{
+                h3{}
+                >p{}
+            }
+        }
+        .recipe-meal-img{
+            img{}
+        }
+        .recipe-link{
+            a{}
+        }
+    }
 }
 
 

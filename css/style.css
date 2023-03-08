@@ -117,7 +117,20 @@ blockquote cite {
 .meal-wrapper .meal-result #meal .meal-name .recipe-btn:hover {
   filter: brightness(1.2);
 }
-
+.meal-wrapper .meal-details-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background: rgb(119, 166, 24);
+  border-radius: 1rem;
+  width: 90%;
+  height: 90%;
+  overflow-y: scroll;
+  display: block;
+  padding: 2rem 0;
+}
 @media screen and (max-width: 1080px) {
   .meal-wrapper .meal-result #meal {
     grid-template-columns: repeat(2, 1fr);
