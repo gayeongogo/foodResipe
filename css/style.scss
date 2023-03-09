@@ -109,6 +109,13 @@ blockquote{
                     }
                 }
             }
+            &.notFound{
+                grid-template-columns: 1fr;
+                color: rgb(119, 166, 24);
+                font-size: 1.8rem;
+                font-weight: 600;
+                width: 100%;
+            }
         }
     
     }
@@ -159,7 +166,6 @@ blockquote{
             }
             .recipe-instruct{
                 padding: 1rem 0;
-                h3{}
                 >p{
                     padding: 1rem 0;
                 }
@@ -187,6 +193,8 @@ blockquote{
         }
     }
 }
+
+
 
 
 @media screen and (max-width: 1080px) {

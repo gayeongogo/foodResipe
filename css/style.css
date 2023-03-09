@@ -117,6 +117,13 @@ blockquote cite {
 .meal-wrapper .meal-result #meal .meal-name .recipe-btn:hover {
   filter: brightness(1.2);
 }
+.meal-wrapper .meal-result #meal.notFound {
+  grid-template-columns: 1fr;
+  color: rgb(119, 166, 24);
+  font-size: 1.8rem;
+  font-weight: 600;
+  width: 100%;
+}
 .meal-wrapper .meal-details {
   position: fixed;
   top: 50%;
