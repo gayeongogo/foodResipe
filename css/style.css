@@ -117,7 +117,7 @@ blockquote cite {
 .meal-wrapper .meal-result #meal .meal-name .recipe-btn:hover {
   filter: brightness(1.2);
 }
-.meal-wrapper .meal-details-content {
+.meal-wrapper .meal-details {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -125,15 +125,79 @@ blockquote cite {
   color: #fff;
   background: rgb(119, 166, 24);
   border-radius: 1rem;
-  width: 90%;
-  height: 90%;
+  width: 700px;
   overflow-y: scroll;
-  display: block;
+  display: none;
   padding: 2rem 0;
 }
+.meal-wrapper .meal-details::-webkit-scrollbar {
+  width: 10px;
+}
+.meal-wrapper .meal-details::-webkit-scrollbar-thumb {
+  background: #f0f0f0;
+  border-radius: 2rem;
+}
+.meal-wrapper .meal-details .recipe-close-btn {
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  font-size: 1.8rem;
+  background: #fff;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+.meal-wrapper .meal-details .recipe-close-btn i {
+  line-height: 35px;
+}
+.meal-wrapper .meal-details-content {
+  margin: 2rem;
+}
+.meal-wrapper .meal-details-content .recipe-title {
+  border-bottom: 1rem;
+}
+.meal-wrapper .meal-details-content .recipe-category {
+  background-color: #fff;
+  font-weight: 600;
+  color: rgb(119, 166, 24);
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.3rem;
+}
+.meal-wrapper .meal-details-content .recipe-instruct {
+  padding: 1rem 0;
+}
+.meal-wrapper .meal-details-content .recipe-instruct > p {
+  padding: 1rem 0;
+}
+.meal-wrapper .meal-details .recipe-meal-img img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.meal-wrapper .meal-details .recipe-link {
+  margin: 1.4rem 0;
+}
+.meal-wrapper .meal-details .recipe-link a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: all 0.4s linear;
+}
+.meal-wrapper .meal-details .recipe-link a:hover {
+  opacity: 0.8;
+}
+
 @media screen and (max-width: 1080px) {
   .meal-wrapper .meal-result #meal {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 750px) {
+  .meal-wrapper .meal-details {
+    width: 90vw;
   }
 }
 @media screen and (max-width: 650px) {
