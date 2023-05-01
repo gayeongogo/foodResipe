@@ -64,7 +64,6 @@ blockquote{
                 &:hover{
                     filter: brightness(1.2);
                 }
-                i{}
             }
         }
     }
@@ -131,6 +130,7 @@ blockquote{
         overflow-y: scroll;
         display: none;
         padding: 2rem 0;
+        &.showRecipe{display: block;}
         &::-webkit-scrollbar{
             width: 10px;
         }
@@ -166,7 +166,7 @@ blockquote{
             }
             .recipe-instruct{
                 padding: 1rem 0;
-                >p{
+                >p:not(.recipe-category){
                     padding: 1rem 0;
                 }
             }
@@ -210,7 +210,8 @@ blockquote{
 @media screen and (max-width: 750px) {
     .meal-wrapper{
         .meal-details{
-            width: 90vw;
+            width: 90%;
+            height: 90%;
         }
     }
 }

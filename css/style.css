@@ -137,6 +137,9 @@ blockquote cite {
   display: none;
   padding: 2rem 0;
 }
+.meal-wrapper .meal-details.showRecipe {
+  display: block;
+}
 .meal-wrapper .meal-details::-webkit-scrollbar {
   width: 10px;
 }
@@ -176,7 +179,7 @@ blockquote cite {
 .meal-wrapper .meal-details-content .recipe-instruct {
   padding: 1rem 0;
 }
-.meal-wrapper .meal-details-content .recipe-instruct > p {
+.meal-wrapper .meal-details-content .recipe-instruct > p:not(.recipe-category) {
   padding: 1rem 0;
 }
 .meal-wrapper .meal-details .recipe-meal-img img {
@@ -204,7 +207,8 @@ blockquote cite {
 }
 @media screen and (max-width: 750px) {
   .meal-wrapper .meal-details {
-    width: 90vw;
+    width: 90%;
+    height: 90%;
   }
 }
 @media screen and (max-width: 650px) {
