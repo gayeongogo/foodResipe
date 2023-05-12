@@ -133,6 +133,7 @@ blockquote cite {
   background: rgb(119, 166, 24);
   border-radius: 1rem;
   width: 700px;
+  height: 700px;
   overflow-y: scroll;
   display: none;
   padding: 2rem 0;
